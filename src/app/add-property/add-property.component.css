@@ -1,0 +1,11 @@
+/* .property_add_form > * {
+    margin-bottom: 8px;
+} */
+.property_add_form {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+}
+.form_actions {
+    margin-top: 3em;
+}

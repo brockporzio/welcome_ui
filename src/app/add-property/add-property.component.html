@@ -1,0 +1,29 @@
+<body class="add_property_container">
+    <div class="">
+        <form (submit)="onSubmit()" class="property_add_form container">
+            <div id="input_1" class="row mt-2">
+                <label for="propertyName" class="col-sm-3">Property Name:</label>
+                <input class="col-sm" type="text" id="propertyName" name="propertyName" [(ngModel)]="newProperty.name" required>
+            </div>
+            <div id="input_2" class="row mt-2">
+                <label for="propertyLocation" class="col-sm-3">Location:</label>
+                <input class="col-sm" type="text" id="propertyLocation" name="propertyLocation" [(ngModel)]="newProperty.location" required>
+            </div>
+            <div id="input_3" class="row mt-2">
+                <label for="propertyType" class="col-sm-3">Property Type:</label>
+                <input class="col-sm" type="text" id="propertyType" name="propertyType" [(ngModel)]="newProperty.type" required>
+            </div>
+            <div id="input_4" class="row mt-2">
+                <label for="propertyBedrooms" class="col-sm-3">Number of bedrooms:</label>
+                <input class="col-sm" type="number" id="propertyBedrooms" name="propertyBedrooms" [(ngModel)]="newProperty.bedrooms" required>
+            </div>
+            <div id="input_5" class="row mt-2">
+                <label for="propertyImage" class="col-sm-3">Property Image:</label>
+                <input class="col-sm" type="text" id="propertyImage" name="propertyImage" [(ngModel)]="newProperty.image" required>
+            </div>
+            <div class="form_actions">
+                <button class="form_actions btn btn-light" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>

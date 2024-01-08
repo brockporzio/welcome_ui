@@ -1,0 +1,59 @@
+<!-- <body class="container">
+    <div class="page_contents row">
+        <div class="selecions col-sm-2">
+            <div>
+                <input type="radio" class="btn-check" name="options-base" id="option1" autocomplete="off" checked
+                [(ngModel)]="selectedOption" value="'addProperty'">
+                <label class="btn" for="option1">Add Property</label>
+            </div>
+            <div>
+                <input type="radio" class="btn-check" name="options-base" id="option2" autocomplete="off"
+                [(ngModel)]="selectedOption" value="'viewProperty'">
+                <label class="btn" for="option2">View Properties</label>
+            </div>
+            <div>
+                <input type="radio" class="btn-check" name="options-base" id="option3" autocomplete="off"
+                [(ngModel)]="selectedOption" value="'editProperty'">
+                <label class="btn" for="option3">Edit Property</label>
+            </div>
+            <div>
+                <input type="radio" class="btn-check" name="options-base" id="option4" autocomplete="off"
+                [(ngModel)]="selectedOption" value="'removeProperty'">
+                <label class="btn" for="option4">Remove Property</label>
+            </div>
+        </div>
+        <div class="selection col-sm">
+            <app-add-property *ngIf="selectedOption === 'addProperty'"></app-add-property>
+        </div>
+    </div>
+</body> -->
+<body class="container">
+    <div class="page_contents row">
+        <div class="selecions col-sm-2">
+            <div>
+                <input type="radio" class="btn-check" name="options-base" id="option1" autocomplete="off" checked
+                [(ngModel)]="selectedOption" [value]="'addProperty'">
+                <label class="btn" for="option1">Add Property</label>
+            </div>
+            <div>
+                <input type="radio" class="btn-check" name="options-base" id="option2" autocomplete="off"
+                [(ngModel)]="selectedOption" [value]="'viewProperty'">
+                <label class="btn" for="option2">View Properties</label>
+            </div>
+            <div>
+                <input type="radio" class="btn-check" name="options-base" id="option3" autocomplete="off"
+                [(ngModel)]="selectedOption" [value]="'editProperty'">
+                <label class="btn" for="option3">Edit Property</label>
+            </div>
+            <div>
+                <input type="radio" class="btn-check" name="options-base" id="option4" autocomplete="off"
+                [(ngModel)]="selectedOption" [value]="'removeProperty'">
+                <label class="btn" for="option4">Remove Property</label>
+            </div>
+        </div>
+        <div class="selection col-sm">
+            <div>{{selectedOption}}</div>
+            <app-add-property *ngIf="selectedOption === 'addProperty'"></app-add-property>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,11 @@
+.container{
+    height: 65vh;
+}
+.selection{
+    width:30vh;
+    height:50vh;
+    border: solid 2px black;
+}
+.page_contents{
+    margin-top: 20vh;
+}
